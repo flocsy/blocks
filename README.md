@@ -97,6 +97,18 @@ or you can install from source:
 
 * <http://git.kernel.org/cgit/linux/kernel/git/mason/btrfs-progs.git>
 
+# CentOS (7 or newer):
+    yum install git python34 python34-pip python34-devel augeas parted-devel
+
+# CentOS 6.6:
+    yum install git python34 python34-pip python34-devel augeas
+
+    wget ftp://ftp.pbone.net/mirror/archive.fedoraproject.org/fedora/linux/releases/14/Everything/x86_64/os/Packages/parted-2.3-3.fc14.x86_64.rpm
+    rpm -ivh parted-2.3-3.fc14.x86_64.rpm
+    wget ftp://ftp.pbone.net/mirror/archive.fedoraproject.org/fedora/linux/releases/14/Everything/x86_64/os/Packages/parted-devel-2.3-3.fc14.x86_64.rpm
+    rpm -ivh parted-devel-2.3-3.fc14.x86_64.rpm
+
+
 # Installation
 
     pip-3.3 install --user -r <(wget -O- https://raw.github.com/g2p/blocks/master/requirements.txt)
